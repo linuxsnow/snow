@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/linuxsnow/debian-bootc-base:stable
+FROM ghcr.io/linuxsnow/debian-bootc-base:latest
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
