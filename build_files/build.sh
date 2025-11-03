@@ -2,4 +2,8 @@
 
 set -ouex pipefail
 
-apt install iwd
+# Switch to IWD
+apt-get install -y \
+	iwd
+apt-get remove -y \
+	wpasupplicant
