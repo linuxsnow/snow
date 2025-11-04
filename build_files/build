@@ -23,3 +23,6 @@ apt-get install -y \
 	iwd
 apt-get remove -y \
 	wpasupplicant
+
+# Cleanup
+apt autoremove -y
