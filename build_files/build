@@ -37,4 +37,4 @@ apt-get remove -y \
 # sed -i 's|^GROUPS=.*|GROUPS=users docker incus-admin' "/etc/default/useradd"
 
 # Cleanup
-apt autoremove -y
+apt autoremove -y --purge
