@@ -26,10 +26,7 @@ curl --retry 3 -Lo /etc/flatpak/remotes.d/flathub.flatpakrepo https://dl.flathub
 
 # GNOME Customization
 apt-get install -y \
-	gnome-shell-extension-appindicator \
-	ptyxis
-apt-get remove -y \
-	gnome-terminal
+	gnome-shell-extension-appindicator
 
 # Switch to IWD
 apt-get install -y \
