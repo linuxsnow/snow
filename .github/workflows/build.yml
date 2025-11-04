@@ -1,6 +1,9 @@
 ---
 name: Build container image
 on:
+  repository_dispatch:
+    types:
+      - build
   pull_request:
     branches:
       - main
