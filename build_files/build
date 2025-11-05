@@ -23,6 +23,10 @@ apt-get update -y
 apt-get install -y \
 	firmware-linux-nonfree
 
+# Ensure dracut is kept
+apt-get install -y \
+	dracut
+
 # Oxidize
 apt install -y \
   sudo-rs \
