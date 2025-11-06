@@ -3,3 +3,11 @@ enabled-extensions=['logomenu@aryan_k', 'appindicatorsupport@rgcjonas.gmail.com'
 
 [org.gnome.desktop.interface]
 enable-hot-corners=false
+
+[org.gnome.shell.extensions.Logo-menu]
+symbolic-icon=true
+menu-button-icon-image=2
+use-custom-icon=false
+menu-button-terminal='ptyxis'
+menu-button-software-center='/usr/bin/bazaar-helper'
+menu-button-system-monitor='/usr/bin/missioncenter-helper'
