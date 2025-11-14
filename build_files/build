@@ -89,11 +89,17 @@ apt-get install -y \
 
 # add vim, this is annoying
 apt-get install -y \
-	vim
+	vim \
+	netcat-traditional
 
+# Cleanup unwanted packages
 apt-get remove -y \
-	wpasupplicant
+	wpasupplicant \
+	gnome-initial-setup \
+	gnome-tour
+
 # Handle new user groups
 echo 'GROUPS=users docker incus-admin' >> /etc/default/useradd
 
+# Clean up machine-id to avoid conflicts and enable first-boot generation
 rm -rf /etc/machine-id
