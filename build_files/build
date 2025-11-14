@@ -86,6 +86,8 @@ apt-get install -y \
 # Switch to IWD
 apt-get install -y \
 	iwd
+apt-get remove -y \
+	wpasupplicant
 
 # add vim, this is annoying
 apt-get install -y \
@@ -101,5 +103,8 @@ apt-get remove -y \
 # Handle new user groups
 echo 'GROUPS=users docker incus-admin' >> /etc/default/useradd
 
-# Clean up machine-id to avoid conflicts and enable first-boot generation
+# Ensure first boot works
 rm -rf /etc/machine-id
+
+# Create mountpoint for users that want this feature.
+mkdir -p /nix
