@@ -89,9 +89,10 @@ apt-get install -y \
 apt-get remove -y \
 	wpasupplicant
 
-# Terminal Alternatives
+# Shell Alternatives
 apt-get install -y \
-    fish
+    fish \
+		zsh
 
 # add vim, this is annoying
 apt-get install -y \
