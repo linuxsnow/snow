@@ -36,8 +36,8 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/build
 
 # DEBUGGING
-RUN apt update -y && apt install -y whois
-RUN usermod -p "$(echo "changeme" | mkpasswd -s)" root
+# RUN apt update -y && apt install -y whois
+# RUN usermod -p "$(echo "changeme" | mkpasswd -s)" root
 
 # Finalize & Lint
 RUN bootc container lint
