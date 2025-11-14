@@ -100,7 +100,7 @@ apt-get install -y \
 	netcat-traditional
 
 # Cleanup unwanted packages
-apt-get remove -y \
+apt-get purge -y \
 	wpasupplicant \
 	gnome-initial-setup \
 	gnome-tour
